@@ -86,11 +86,11 @@ const Home = () => (
           channel called &quot;
           <Link
             as={NextLink}
-            href="https://www.youtube.com/ExcellenceExploring"
+            href="https://www.youtube.com/channel/UC8lWeV0xePxysVetCBGvLzA"
             passHref
             target="_blank"
           >
-           Excellence Exploring
+           Aarsh Patel
           </Link>
           &quot; has around than 10k subscribers.
         </Paragraph>
@@ -102,7 +102,7 @@ const Home = () => (
             rightIcon={<ChevronRightIcon />}
             colorScheme="teal"
           >
-            My portfolio
+            My Projects
           </Button>
         </Box>
       </Section>
@@ -159,13 +159,13 @@ const Home = () => (
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://www.instagram.com/excellence_exploring/" target="_blank">
+            <Link href="https://www.instagram.com/_aarsh_patel/" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoInstagram/>}
               >
-                @ExcellenceExploring
+                @_aarsh_patel
               </Button>
             </Link>
           </ListItem>
@@ -195,8 +195,8 @@ const Home = () => (
 
         <SimpleGrid columns={[1, 1]} gap={6}>
           <GridItem
-            href="https://www.youtube.com/ExcellenceExploring"
-            title="Excelllence Exploring"
+            href="https://www.youtube.com/channel/UC8lWeV0xePxysVetCBGvLzA"
+            title="Aarsh Patel"
             thumbnail={thumbYouTube}
           >
             My YouTube channel (&gt;10k subs)
@@ -218,7 +218,7 @@ const Home = () => (
             rightIcon={<ChevronRightIcon />}
             colorScheme="teal"
           >
-            Popular posts
+            My Skills
           </Button>
         </Box>
       </Section>

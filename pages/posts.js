@@ -3,76 +3,167 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 
-import thumbPortfolio from '../public/images/contents/youtube-how-to-build-portfolio.jpg'
-import thumbHowToUseInkdrop from '../public/images/contents/youtube-how-to-use-inkdrop.jpg'
-import thumbFishWorkflow from '../public/images/contents/youtube-fish-workflow.jpg'
-import thumbMyDeskSetup from '../public/images/contents/youtube-my-desk-setup.jpg'
-import thumb500PaidUsers from '../public/images/contents/blog-500-paid-users.jpg'
-import thumbFinancialGoal from '../public/images/contents/blog-financial-goal.png'
-import thumbHowToPriceYourself from '../public/images/contents/blog-how-to-price-yourself.jpg'
-import thumb50xFaster from '../public/images/contents/youtube-50x-faster.jpg'
+import c from '../public/images/contents/1.png'
+import cplus from '../public/images/contents/2.png'
+import Java from '../public/images/contents/java.png'
+import Python from '../public/images/contents/python.png'
+import html from '../public/images/contents/4.png'
+import css from '../public/images/contents/3.png'
+import react from '../public/images/contents/5.png'
+import javascript from '../public/images/contents/6.png'
+import nodejs1 from '../public/images/contents/7.png'
+import expressjs from '../public/images/contents/8.png'
+import mongo from '../public/images/contents/9.png'
+import php from '../public/images/contents/10.png'
+import azure from '../public/images/contents/11.png'
+import gcp from '../public/images/contents/13.png'
+import git from '../public/images/contents/12.png'
+import kali from '../public/images/contents/15.png'
+import linux from '../public/images/contents/14.png'
+import mysql from '../public/images/contents/16.png'
+import azcert from '../public/images/contents/17.png'
+import udecert from '../public/images/contents/18.png'
+
+import { Html } from 'next/document'
 
 const Posts = () => (
   <Layout title="Posts">
     <Container>
-      <Heading as="h3" fontSize={20} mb={4}>
-        Popular Posts
+      <Heading as="h2" fontSize={30} mb={5}>
+       Skills
       </Heading>
-
+      <Heading as="h3" fontSize={20} mb={4}>
+      Programming Skills
+      </Heading>
       <Section delay={0.1}>
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+        <SimpleGrid columns={[1, 4, 4]} gap={6}>
           <GridItem
-            title="How to build a portfolio website"
-            thumbnail={thumbPortfolio}
-            href="https://www.youtube.com/watch?v=bSMZgXzC9AA"
+            title="C"
+            thumbnail={c}
           />
           <GridItem
-            title="How to take notes in Markdown efficiently with Inkdrop"
-            thumbnail={thumbHowToUseInkdrop}
-            href="https://www.youtube.com/watch?v=-qBavwqc_mY"
+            title="C++"
+            thumbnail={cplus}
+          //  href="https://www.youtube.com/watch?v=-qBavwqc_mY"
+          />
+            <GridItem
+            title="Java"
+            thumbnail={Java}
+         
           />
           <GridItem
-            title="My Fish workflow"
-            thumbnail={thumbFishWorkflow}
-            href="https://www.youtube.com/watch?v=KKxhf50FIPI"
-          />
-          <GridItem
-            title="My desk setup (Late 2020)"
-            thumbnail={thumbMyDeskSetup}
-            href="https://www.youtube.com/watch?v=1OFDMwDlnOE"
+            title="Python"
+            thumbnail={Python}
+         
           />
         </SimpleGrid>
       </Section>
+
+      <Heading as="h3" fontSize={20} mb={4}>
+    Front End Technologies
+        </Heading>
+      <Section delay={0.1}>
+        <SimpleGrid columns={[1, 4, 4]} gap={6}>
+          <GridItem
+            title="Html"
+            thumbnail={html}
+           />
+          <GridItem
+            title="CSS"
+            thumbnail={css}
+          //  href="https://www.youtube.com/watch?v=-qBavwqc_mY"
+          />
+          <GridItem
+             title="JavaScript"
+             thumbnail={javascript}
+          />
+          <GridItem
+            title="React"
+            thumbnail={react}
+          />
+        </SimpleGrid>
+      </Section>
+
+      <Heading as="h3" fontSize={20} mb={4}>
+    Back End Technologies
+        </Heading>
+      <Section delay={0.1}>
+        <SimpleGrid columns={[1, 5, 5]} gap={5}>
+          <GridItem
+            title="NodeJS"
+            thumbnail={nodejs1}
+           />
+          <GridItem
+            title="ExpressJS"
+            thumbnail={expressjs}
+             //  href="https://www.youtube.com/watch?v=-qBavwqc_mY"
+          />
+          <GridItem
+             title="MongoDB"
+             thumbnail={mongo}
+          />
+          <GridItem
+            title="PHP"
+            thumbnail={php}
+          />
+           <GridItem
+            title="MYSQL"
+            thumbnail={mysql}
+          />
+        </SimpleGrid>
+      </Section>
+
+      <Heading as="h3" fontSize={20} mb={4}>
+    Tools
+        </Heading>
+      <Section delay={0.1}>
+        <SimpleGrid columns={[1, 5, 5]} gap={6}>
+          <GridItem
+            title="Git"
+            thumbnail={git}
+           />
+           <GridItem
+            title="GCP"
+            thumbnail={gcp}
+          />
+          <GridItem
+            title="Linux"
+            thumbnail={linux}
+             //  href="https://www.youtube.com/watch?v=-qBavwqc_mY"
+          />
+          <GridItem
+             title="Azure"
+             thumbnail={azure}
+          />
+          <GridItem
+             title="Kali"
+             thumbnail={kali}
+          />
+          
+          
+        </SimpleGrid>
+      </Section>
+
+      <Heading as="h2" fontSize={30}  color="" mb={4}>
+    Certifications
+            </Heading>
 
       <Section delay={0.3}>
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+        <SimpleGrid columns={[1, 1, 1]} gap={6}>
           <GridItem
-            title="How I’ve Attracted The First 500 Paid Users For My SaaS That Costs $5/mo"
-            thumbnail={thumb500PaidUsers}
-            href="https://blog.inkdrop.app/how-ive-attracted-the-first-500-paid-users-for-my-saas-that-costs-5-mo-7a5b94b8e820"
+            title="Microsoft Azure Fundamentals"
+            thumbnail={azcert}
+            href="https://drive.google.com/file/d/1awKHhDJpza29hGBqiTgL-2avHbIhPURd/view"
           />
           <GridItem
-            title="I stopped setting a financial goal for my SaaS"
-            thumbnail={thumbFinancialGoal}
-            href="https://blog.inkdrop.app/i-stopped-setting-a-financial-goal-for-my-saas-a92c3db65506"
+            title=" Udemy Complete Web Developer Bootcamp"
+            thumbnail={udecert}
+            href="https://drive.google.com/file/d/1PT7ETSHylKU9lt2_cC6q-Y538B4yS-2J/view"
           />
         </SimpleGrid>
       </Section>
 
-      <Section delay={0.5}>
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            title="How to Price Yourself as a Freelance Developer"
-            thumbnail={thumbHowToPriceYourself}
-            href="https://blog.inkdrop.app/how-to-price-yourself-as-a-freelance-developer-3453dfd59d91"
-          />
-          <GridItem
-            title="I made my React Native app 50x faster"
-            thumbnail={thumb50xFaster}
-            href="https://www.youtube.com/watch?v=vj723NlrIQc"
-          />
-        </SimpleGrid>
-      </Section>
+    
     </Container>
   </Layout>
 )

@@ -3,12 +3,12 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
-import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
-import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
-import thumbMenkiki from '../public/images/works/menkiki_eyecatch.png'
-import thumbMargelo from '../public/images/works/margelo_eyecatch.png'
-import thumbModeTokyo from '../public/images/works/modetokyo_eyecatch.png'
+import UserFinder from '../public/images/works/1.jpg'
+import TodoList from '../public/images/works/2.png'
+import EasyQuiz from '../public/images/works/3.jpg'
+import DrumKit from '../public/images/works/4.jpg'
+import HealthBand from '../public/images/works/6.jpg'
+import NFCCard from '../public/images/works/7.jpg'
 import thumbStyly from '../public/images/works/styly_eyecatch.png'
 import thumbPichu2 from '../public/images/works/pichu2_eyecatch.png'
 import thumbFreeDBTagger from '../public/images/works/freedbtagger_eyecatch.png'
@@ -18,40 +18,37 @@ const Works = () => (
   <Layout title="Works">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
-        Works
+        Projects
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
-            A Markdown note-taking app with 100+ plugins, cross-platform and
-            encrypted data sync support
+          <WorkGridItem id="inkdrop" title="Github User Finder" thumbnail={UserFinder}>
+          A platform where you can find GitHub Users and See their Statics. Build Using API's and MERN Stack
           </WorkGridItem>
         </Section>
         <Section>
           <WorkGridItem
             id="walknote"
-            title="walknote"
-            thumbnail={thumbWalknote}
+            title="TodoList"
+            thumbnail={TodoList}
           >
-            Music recommendation app for iOS
+            TodoList where you can notedown the task need Completed
           </WorkGridItem>
         </Section>
 
         <Section delay={0.1}>
           <WorkGridItem
             id="fourpainters"
-            title="The four painters"
-            thumbnail={thumbFourPainters}
+            title="Easy Quiz"
+            thumbnail={EasyQuiz}
           >
-            A video work generated with deep learning, imitating famous four
-            painters like Van Gogh
+            A Platform where quizz can be taken easy with proper markeing system.
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
-          <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Menkiki">
-            An app that suggests ramen(noodle) shops based on a given photo of
-            the ramen you want to eat
+          <WorkGridItem id="menkiki" thumbnail={DrumKit} title="Drum Kit">
+           A musical app which has differnt music beats 
           </WorkGridItem>
         </Section>
       </SimpleGrid>
@@ -60,24 +57,23 @@ const Works = () => (
         <Divider my={6} />
 
         <Heading as="h3" fontSize={20} mb={4}>
-          Collaborations
+          Group Projects
         </Heading>
       </Section>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.3}>
-          <WorkGridItem id="margelo" thumbnail={thumbMargelo} title="Margelo">
-            A website of the elite app development and contracting agency based
-            in Austria
+          <WorkGridItem id="margelo" thumbnail={HealthBand} title="Health Monitroing Band">
+           Monitroing Heath of Old Age People and Alarm is something is wrong
           </WorkGridItem>
         </Section>
         <Section delay={0.3}>
           <WorkGridItem
             id="modetokyo"
-            thumbnail={thumbModeTokyo}
-            title="mode.tokyo"
+            thumbnail={NFCCard}
+            title="NFC Based Payment System "
           >
-            The mode magazine for understanding to personally enjoy Japan
+            This is Nfc based Payment Gateway System for University. 
           </WorkGridItem>
         </Section>
         <Section delay={0.3}>
