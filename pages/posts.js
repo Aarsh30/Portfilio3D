@@ -24,7 +24,6 @@ import mysql from '../public/images/contents/16.png'
 import azcert from '../public/images/contents/17.png'
 import udecert from '../public/images/contents/18.png'
 
-import { Html } from 'next/document'
 
 const Posts = () => (
   <Layout title="Posts">
