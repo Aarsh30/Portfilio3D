@@ -79,7 +79,7 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-         Aarsh is a Cloud Engineer and a full-stack developer based in India with a
+         Aarsh is a Full Stack Devloper and Cloud Engineer based in India with a
           passion for building digital stuff. He likes to solving real-life problems with code. 
           When not online, he loves Reads and Create Content for Social Media. Currently, He is Pursing B.Tech in Computer 
           Science. He publishes content Realted Self growth, College Reviews,Productivity,Coding, Career Opportunities, Podcasts on his YouTube
@@ -121,7 +121,8 @@ const Home = () => (
         </BioSection>
           <BioSection>
           <BioYear>2020-24</BioYear>
-        &nbsp;&nbsp;&nbsp; Pursuing B.Tech in Computer Science  Specialization in Networking and Security from VIT-AP
+        &nbsp;&nbsp;&nbsp; Pursuing B.Tech in Computer Science  Specialization in
+        &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;   &nbsp;Networking and Security from VIT-AP
         </BioSection>
       </Section>
 
