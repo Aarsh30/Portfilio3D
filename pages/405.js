@@ -12,7 +12,7 @@ const NotFound = () => {
   return (
     <Container>
       <Heading as="h1">Not found</Heading>
-      <Text>The page you&apos;re looking for is under construction comming soon.</Text>
+      <Text>Here are the some social profiles</Text>
       <Divider my={6} />
       <Box my={6} align="center">
         <Button as={NextLink} href="/" colorScheme="teal">
