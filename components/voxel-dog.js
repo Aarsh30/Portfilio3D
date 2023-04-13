@@ -122,5 +122,11 @@ const VoxelDog = () => {
     <DogContainer ref={refContainer}>{loading && <DogSpinner />}</DogContainer>
   )
 }
+// services.AddCors(options =>
+//   {
+//       options.AddPolicy(
+//           _corsName,
+//           builder => { builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader().AllowCredentials(); });}
+//   );
 
 export default VoxelDog
