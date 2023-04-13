@@ -1,5 +1,5 @@
 {
-  "name": "Portfilo ",
+  "name": "portfilo",
   "version": "1.0.0",
   "description": "Aarsh",
   "scripts": {
@@ -10,15 +10,15 @@
     "lint": "next lint"
   },
   "keywords": [],
-  "author": "Takuya Matsuyama",
-  "license": "MIT",
+  "author": "Aarsh",
+  "license": " ",
   "dependencies": {
     "@chakra-ui/icons": "^2.0.15",
-    "@chakra-ui/react": "^2.4.6",
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
-    "framer-motion": "^8.4.0",
-    "next": "^13.1.1",
+    "@chakra-ui/react": "^2.5.5",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "framer-motion": "^8.5.5",
+    "next": "^13.3.0",
     "next.js": "^1.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -27,7 +27,20 @@
   },
   "devDependencies": {
     "eslint": "^8.31.0",
-    "eslint-config-next": "^13.1.1",
-    "prettier": "^2.8.2"
-  }
+    "eslint-config-next": "^13.3.0",
+    "prettier": "^2.8.7"
+  },
+  "main": "next.config.js",
+  "directories": {
+    "doc": "doc",
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aarsh30/Portfilio-New-Main.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Aarsh30/Portfilio-New-Main/issues"
+  },
+  "homepage": "https://github.com/Aarsh30/Portfilio-New-Main#readme"
 }
