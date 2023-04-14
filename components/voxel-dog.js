@@ -33,7 +33,7 @@ const VoxelDog = () => {
       renderer.setSize(scW, scH)
     }
   }, [])
-
+urlDogGLB.use(cors());
   /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     const { current: container } = refContainer
