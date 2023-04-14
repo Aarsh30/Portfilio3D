@@ -16,13 +16,13 @@ const VoxelDog = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
-  const link ={origin:'https://craftzdog.global.ssl.fastly.net/homepage',
-  crossorigin: true,    
-  mode: 'no-cors',    
-  credential:true
-}
-  const urlDogGLB = (process.env.NODE_ENV === 'production' ? link : '') + '/dog.glb'
-  // const urlDogGLB = (process.env.NODE_ENV === 'production' ? 'https://craftzdog.global.ssl.fastly.net/homepage' : '') + '/dog.glb'
+//   const link ={origin:'https://craftzdog.global.ssl.fastly.net/homepage',
+//   crossorigin: true,    
+//   mode: 'no-cors',    
+//   credential:true
+// }
+  // const urlDogGLB = (process.env.NODE_ENV === 'production' ? link : '') + '/dog.glb'
+   const urlDogGLB = (process.env.NODE_ENV === 'production' ? 'https://craftzdog.global.ssl.fastly.net/homepage' : '') + '/dog.glb'
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer
     const { current: container } = refContainer
