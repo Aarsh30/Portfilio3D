@@ -4,9 +4,6 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { loadGLTFModel } from '../lib/model'
 import { DogSpinner, DogContainer } from './voxel-dog-loader'
 
-
-
-
 function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4))
 }
@@ -16,11 +13,11 @@ const VoxelDog = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
-//   const link=fetch('https://craftzdog.global.ssl.fastly.net/homepage',
-//   {mode:'cors'
-// })
-     const urlDogGLB = (process.env.NODE_ENV === 'production' ? link : '') + '/dog.glb'
-    //const urlDogGLB = (process.env.NODE_ENV === 'production' ? 'https://craftzdog.global.ssl.fastly.net/homepage' : '') + '/dog.glb'
+  const link = fetch('https://craftzdog.global.ssl.fastly.net/homepage/dog.glb', {
+  mode: 'no-cors'
+});
+const urlDogGLB = (process.env.NODE_ENV === 'production' ? link : '') + '/dog.glb'
+   //const urlDogGLB = (process.env.NODE_ENV === 'production' ? 'https://craftzdog.global.ssl.fastly.net/homepage' : '') + '/dog.glb'
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer
     const { current: container } = refContainer
