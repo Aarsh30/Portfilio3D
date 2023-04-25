@@ -15,7 +15,7 @@ const VoxelDog = () => {
   const refRenderer = useRef()
 
  // const urlDogGLB = (process.env.NODE_ENV === 'production' ? 'https://craftzdog.global.ssl.fastly.net/homepage' : '') + '/dog.glb'
- const urlDogGLB = (process.env.NODE_ENV ==='production' ? '../public':'')+'/dog.glb'
+ const urlDogGLB = (process.env.NODE_ENV ==='production' ? '../public/dog.glb':'')+'/dog.glb'
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer
     const { current: container } = refContainer
@@ -25,7 +25,7 @@ const VoxelDog = () => {
 
       renderer.setSize(scW, scH)
     }
-  }, [])
+  }, []);
 
   /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
